@@ -1,0 +1,87 @@
+.attractive-card{
+  border-radius:12px;
+  overflow:hidden;
+  transition: transform 220ms cubic-bezier(.2,.8,.2,1), box-shadow 220ms;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.06);
+  background: var(--surface, #fff);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+/* make CardActionArea stretch so the card fills the grid cell */
+.attractive-card .MuiCardActionArea-root {
+  display: block;
+  width: 100%;
+}
+.container{
+  width:100%;
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:0 10px; /* changed to 10px left/right for all devices */
+}
+@media (max-width:600px){
+  .attractive-card{ border-radius:10px; }
+  .card-body{ min-height:70px; }
+  .card-title{ font-size:1rem; }
+  /* reduce hint size on mobile */
+  .card-hint{ font-size:0.8rem }
+}
+
+.attractive-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(2,6,23,0.12);
+}
+
+/* header with emoji and title */
+.card-header{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:14px 16px;
+  color:#fff;
+}
+
+.card-emoji{
+  min-width:48px;
+  min-height:48px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:22px;
+  border-radius:10px;
+  background: rgba(255,255,255,0.12);
+  box-shadow: 0 6px 16px rgba(2,6,23,0.06);
+}
+
+/* title style */
+.card-title{
+  font-weight:700;
+  font-size:1.05rem;
+  line-height:1.1;
+}
+
+/* body */
+.card-body{
+  color: var(--muted, #4b5563);
+  margin-top: 6px;
+  min-height:84px;
+  white-space:pre-wrap;
+}
+
+/* small hint text */
+.card-hint{
+  margin-top:12px;
+  font-size:0.85rem;
+  color: rgba(0,0,0,0.45);
+}
+
+/* responsive tweaks */
+@media (max-width:600px){
+  .card-body{ min-height:70px; }
+  .card-title{ font-size:1rem; }
+}
+
+/* ...existing code... */

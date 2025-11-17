@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g3" x1="0" x2="1">
+      <stop offset="0" stop-color="#FF7A90"/>
+      <stop offset="1" stop-color="#0FB19A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="600" fill="url(#g3)"/>
+  <g transform="translate(80,120)" fill="#fff" font-family="Inter, Arial, sans-serif">
+    <text x="0" y="60" font-size="52" font-weight="700">Women Empowerment</text>
+    <text x="0" y="120" font-size="24" opacity="0.95">Skill programs · Self-help groups · Awareness</text>
+    <rect x="0" y="160" rx="10" ry="10" width="240" height="46" fill="#053B35"/>
+    <text x="30" y="191" font-size="16" font-weight="700" fill="#fff">Read Stories</text>
+  </g>
+  <g fill="#fff" opacity="0.06">
+    <circle cx="1400" cy="500" r="260"/>
+  </g>
+</svg>

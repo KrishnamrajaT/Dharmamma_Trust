@@ -24,12 +24,10 @@ export function Navbar() {
   // };
 
   const handlePageChange = (page) => {
-    if (page==="Home") {
-    navigate('/');
-      
+    if (page === "Home") {
+      navigate("/");
     } else {
-    navigate(`/${page}`);
-      
+      navigate(`/${page}`);
     }
 
     console.log(page);
@@ -40,7 +38,14 @@ export function Navbar() {
   };
 
   return (
-    <AppBar position="fixed">
+    <AppBar
+      position="fixed"
+      sx={{
+        background:
+          "linear-gradient(150deg, #233B8A 0%, #4C6EF5 50%, #0FB19A 100%)",
+        boxShadow: "0 4px 18px rgba(2,6,23,0.08)",
+      }}
+    >
       <Container maxWidth="xl">
         <Toolbar
           disableGutters

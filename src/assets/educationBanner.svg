@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+  <title id="title">Cow Care</title>
+  <desc id="desc">Illustration of a cow with a caring hand and heart symbol representing animal care.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0" stop-color="#F6FFF8"/>
+      <stop offset="1" stop-color="#E6F7FF"/>
+    </linearGradient>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0" stop-color="#FFD4A3"/>
+      <stop offset="1" stop-color="#FFB36B"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bg)"/>
+
+  <!-- ground -->
+  <rect x="0" y="420" width="1200" height="180" fill="#E9F5EA"/>
+
+  <!-- stylized cow body -->
+  <g transform="translate(180,150)">
+    <rect x="260" y="120" rx="80" ry="80" width="520" height="220" fill="#fff" stroke="#3A3D43" stroke-width="8"/>
+    <!-- spots -->
+    <ellipse cx="420" cy="200" rx="60" ry="40" fill="#3A3D43"/>
+    <ellipse cx="590" cy="170" rx="46" ry="30" fill="#3A3D43"/>
+    <ellipse cx="710" cy="240" rx="36" ry="24" fill="#3A3D43"/>
+    <!-- head -->
+    <g transform="translate(-20,40)">
+      <ellipse cx="240" cy="200" rx="86" ry="70" fill="#fff" stroke="#3A3D43" stroke-width="8"/>
+      <ellipse cx="210" cy="190" rx="14" ry="10" fill="#3A3D43"/>
+      <ellipse cx="270" cy="190" rx="14" ry="10" fill="#3A3D43"/>
+      <path d="M190 230 q30 18 80 0" fill="none" stroke="#3A3D43" stroke-width="6" stroke-linecap="round"/>
+      <!-- ear -->
+      <path d="M170 150 q-18 -10 -34 6 q18 6 34 6" fill="#fff" stroke="#3A3D43" stroke-width="6"/>
+      <!-- horn -->
+      <path d="M300 120 q20 -30 40 -6" fill="#FFD9B8" stroke="#3A3D43" stroke-width="6"/>
+    </g>
+
+    <!-- legs -->
+    <rect x="320" y="310" width="28" height="90" rx="8" fill="#3A3D43"/>
+    <rect x="420" y="310" width="28" height="90" rx="8" fill="#3A3D43"/>
+    <rect x="640" y="310" width="28" height="90" rx="8" fill="#3A3D43"/>
+    <rect x="740" y="310" width="28" height="90" rx="8" fill="#3A3D43"/>
+
+    <!-- tail -->
+    <path d="M780 200 q60 30 90 10" stroke="#3A3D43" stroke-width="10" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- caring hand + heart -->
+  <g transform="translate(780,60)">
+    <g filter="url(#soft)" opacity="0.12">
+      <circle cx="80" cy="160" r="90" fill="#FFB3A4"/>
+    </g>
+    <path d="M20 220 q40 -60 120 -60 q-6 -36 -40 -44 q-20 -6 -56 18 q-20 16 -24 50 z" fill="#FFD9B8" stroke="#3A3D43" stroke-width="4"/>
+    <g transform="translate(40,120)">
+      <path d="M40 20 q30 -30 60 0 q-6 18 -28 36 q-22 -18 -32 -36 z" fill="#FF6B87"/>
+      <path d="M40 20 q30 -30 60 0 q-6 18 -28 36 q-22 -18 -32 -36 z" fill-opacity="0.08"/>
+    </g>
+    <text x="0" y="320" fill="#3A3D43" font-family="Inter, Arial" font-size="28" font-weight="600">Cow Care</text>
+  </g>
+</svg>
