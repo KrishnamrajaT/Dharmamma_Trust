@@ -11,10 +11,10 @@ const headers = [
   "Cerebral Palsy",
 ];
 const content = [
-  "“A Society in which All Challenged Individuals are an Integral Part.”",
+  "A Society in which All Challenged Individuals are an Integral Part.",
   "To enable persons with Cerebral Palsy, Intellectual Disabilities, Autism and Multiple Disabilities realize their rights and potential and become contributing members of the Society.",
   "Disciplined Approach · Commitment · Team Work · Accountability · Transparency",
-  "“A society for all can be achieved THROUGH INCLUSION”",
+  "A society for all can be achieved THROUGH INCLUSION",
   "Autism is a lifelong neurological condition, a developmental disorder that typically occurs in the first three years of life.",
   "It describes a group of disorders of development of movement and posture, causing activity limitation, that occur in the developing foetal or infant brain.",
 ];
@@ -54,10 +54,6 @@ export function EightCards() {
               <CardContent>
                 <Typography variant="body2" className="card-body">
                   {content[index]}
-                </Typography>
-
-                <Typography className="card-hint" component="p">
-                  Hint: Click the card to learn more about this program.
                 </Typography>
               </CardContent>
             </CardActionArea>

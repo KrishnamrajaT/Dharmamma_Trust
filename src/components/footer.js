@@ -11,9 +11,9 @@ export function Footer() {
             <p>We are a charitable trust dedicated to making a positive impact in our community.</p>
           </div>
           <div className="col-md-6">
-            <h3>Contact Us</h3>
-            <p>Email: info@example.com</p>
-            <p>Phone: 123-456-7890</p>
+            <h3 >Contact Us</h3>
+            <p className='email'>Email: dhrmammatrust@gmail.com</p>
+            <p>Phone: 8500406444</p>
           </div>
         </div>
       </div>

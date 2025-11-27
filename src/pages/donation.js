@@ -83,14 +83,11 @@ export function Donation() {
         alignItems: "center",
         marginTop: 10,
         marginBottom: 5,
+        width: "108%",
       }}
     >
       <ResponsiveDialog />
-      <Grid md={4} sx={{ display: { xs: "none", md: "flex" } }}>
-        <DonationCard />
-      </Grid>
-      <Grid xs={8} md={4}>
-        <Paper style={{ padding: "20px" }} elevation={3}>
+      <Grid xs={10} md={8}>
           <Typography variant="h5" align="center" gutterBottom>
             Your Information
           </Typography>
@@ -204,7 +201,6 @@ export function Donation() {
               Submit
             </Button>
           </form>
-        </Paper>
       </Grid>
     </Grid>
   );

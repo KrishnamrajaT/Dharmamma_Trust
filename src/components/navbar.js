@@ -62,13 +62,14 @@ export function Navbar() {
               aria-haspopup="true"
               // onClick={handleOpenNavMenu}
               color="inherit"
+              sx={{ padding: "6px 0px" }}
             >
               <DrawerMenu />
             </IconButton>
           </Box>
 
           <Box>
-            <AdbIcon sx={{ mr: 1 }} />
+            {/* <AdbIcon sx={{ mr: 1 }} />
             <Typography
               variant="h5"
               noWrap
@@ -83,7 +84,7 @@ export function Navbar() {
               }}
             >
               LOGO
-            </Typography>
+            </Typography> */}
           </Box>
 
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
@@ -105,6 +106,7 @@ export function Navbar() {
               color="success"
               endIcon={<VolunteerActivismIcon />}
               onClick={donate}
+              sx={{ marginRight: "25px" }}
             >
               <span>Donate</span>
             </Button>{" "}
